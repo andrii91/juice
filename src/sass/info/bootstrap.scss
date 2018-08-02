@@ -323,7 +323,7 @@ template {
 
 [hidden] {
   display: none !important;
-}
+} 
 
 
 html {
@@ -333,9 +333,9 @@ html {
 
 *,
 *::before,
-*::after {
+*::after { 
   box-sizing: inherit;
-}
+} 
 
 .container {
   margin-right: auto;
@@ -345,31 +345,14 @@ html {
   width: 100%;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 810px;
   }
 }
 
-.container-fluid {
+.container-fluid { 
   width: 100%;
   margin-right: auto;
   margin-left: auto;
