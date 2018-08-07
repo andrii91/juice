@@ -1,8 +1,74 @@
 @import '../../mq';
 
 @media #{$tabletPortrait} {
-    @import '../mobile';
-  	& {
-     
+	//    @import '../mobile';
+	& {
+		header,
+		main,
+		footer {
+			overflow: hidden;
+		}
+		.lang {
+			margin-left: 0;
+			float: right;
+		}
+		.event-item {
+			img {
+				max-width: 100%;
+			}
+		}
+		.head-carousel {
+			height: 80vh;
+
+			&.owl-carousel .owl-item img {
+				width: inherit;
+				height: 80vh;
+			}
+		}
+		.head-carousel .owl-dots {
+			max-width: calc(100% - 30px);
+		}
+		.team-carousel .item {
+			padding: 5px;
+		}
+
+		.team-carousel {
+			width: 100%;
+			margin-left: 0;
+		}
+		.team-carousel .owl-nav {
+			opacity: 1;
+			height: 72px;
+		}
+		.team-carousel .owl-nav .owl-next {
+			width: 20px;
+			height: 72px;
+			position: relative;
+			float: right;
+			top: 0;
+			font-size: 60px;
+			transform: none;
+		}
+		.team-carousel .owl-nav .owl-prev {
+			float: left;
+			font-size: 60px;
+		}
+		.team-carousel .owl-nav span {
+			font-size: 60px;
+			color: #fff;
+		}
+		.container {
+			max-width: 738px;
+		}
+		.team header {
+			min-height: 60vh;
+		}
+		.team_all-item .more {
+			width: 709px;
+			padding: 40px 61px;
+		}
+      .events_all-tab_content .more .img {
+        overflow: hidden;
+      }
 	}
 }
