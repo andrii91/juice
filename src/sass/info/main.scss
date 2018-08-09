@@ -493,6 +493,35 @@ background-color: #34cc89;
 		margin-bottom: 25px;
 	}
 }
+.blog {
+	header {
+		width: 100%;
+		display: block;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-align: center;
+		align-items: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		min-height: 60vh;
+	}
+background-color: #0640e7;
+	padding: 117px 0 56px;
+	overflow: hidden;
+	.h2 {
+		margin-bottom: 25px;
+	}
+  .all-link {
+    margin-top: 40px;
+    &:before {
+      background-color: #0640e7;
+    }
+    
+  }
+  .help-btn {
+    margin-top: 73px;
+  }
+}
 
 .team-carousel {
 	width: 97vw;
@@ -637,6 +666,12 @@ background-color: #34cc89;
 	&:hover {
 		color: #fff;
 	}
+  &:after {
+    content: " ";
+    clear: both;
+    display: table;
+    
+  }
 }
 
 .help-btn {
@@ -667,7 +702,7 @@ background-color: #34cc89;
 	0);
 	position: relative;
 	overflow: hidden;
-	background-color: #fff307;
+	    background: rgba(243, 47, 106, 0.9);
 	-webkit-transition-property: color;
 	transition-property: color;
 	-webkit-transition-duration: 0.3s;
@@ -713,10 +748,10 @@ background-color: #34cc89;
 		transform: scale(0);
 	}
 	&:hover {
-		color: #553ade;
+		color: #fff;
 		box-shadow: 0 6px 10px #b7345c;
 		span {
-			color: #553ade;
+			color: #fff;
 		}
 	}
 }
@@ -1100,5 +1135,269 @@ background-color: #34cc89;
   &:hover {
     transform: translateY(1px);
     box-shadow: 0px 10px 25px 0px rgba(40,155,117,0);
+  }
+}
+
+.blog_tmpl {
+  .footer {
+    background-color: #0437c8;
+  }
+}
+
+.blog-item {
+  position: relative;
+  display: block;
+  margin-top: 73px;
+  .content {
+    margin: 50px 53px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 500px;
+    .title {
+      color: #003ffb;
+      font-family: "Noto Sans";
+      font-size: 38px;
+    }
+    p {
+      color: #003ffb;
+      font-family: "Noto Sans";
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.juice-btn {
+  box-shadow: 0 6px 10px rgba(37, 21, 119, 0.68);
+  background-color: rgba(246, 195, 228, 0.9);
+  &:before {
+    background-color: #f6c3e4;
+  }
+  &:after {
+    background: url('../images/j.png') no-repeat center;
+  }
+  &:hover {
+    box-shadow: 0 6px 10px rgba(37, 21, 119, 0.68);
+    
+  }
+}
+
+.blog_page {
+  margin-top: 121px;
+  header {
+    .container {
+      max-width: 966px
+    }   
+  }
+  nav {
+    &.fixed {
+      background: #fefefe;
+    }
+  }
+  .menu {
+    li {
+      a {
+        color: #000000;
+        &:before {
+          background: #000;
+        }
+      }
+    }
+  }
+  .lang {
+    li {
+      a {
+        color: #000;
+        &:before {
+          background: #000;
+        }
+      }
+    }
+  }
+  main {
+    padding-bottom: 120px;
+  }
+}
+
+.blog-img {
+  img {
+    width: 100%;
+  }
+  margin-bottom: 70px;
+}
+
+.blog_page-item {
+  h1 {
+    color: #0431b2;
+    font-family: "Noto Sans";
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .sub_title {
+    color: #0431b2;
+    font-family: "Noto Sans";
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+  .social {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 95px;
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 21px;
+      &:last-child {
+        margin-right: 0;
+        a {
+          overflow: hidden;
+          border-radius: 9px;
+          
+        }
+      }
+      a {
+        display: block;
+        border-radius: 9px;
+        
+        img {
+          width: 35px;
+          height: 35px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  p {
+    color: #0431b2;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  img {
+    margin: 20px 0 59px;
+  }
+}
+
+.blog_page-date {
+  margin-bottom: 90px;
+  color: #0431b2;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.boutton-nav {
+  margin-bottom: 100px;
+  color: #0431b2;
+  font-family: "Noto Sans";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  &:after {
+    content: " ";
+    clear: both;
+    display: table;
+  }
+  a {
+    display: block;
+  }
+  .prev {
+    float: left;
+  }
+  .next {
+    float: right;
+  }
+}
+
+.blog_page_v2 {
+  .blog_page-item {
+    img {
+      width: calc(100% + 170px);
+      margin-left: -85px;
+      margin-right: -85px;
+    }
+  }
+}
+
+.donate {
+  	header {
+		width: 100%;
+		display: block;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-align: center;
+		align-items: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		min-height: 60vh;
+	}
+background-color: #f22f6a;
+	padding: 117px 0 56px;
+	overflow: hidden;
+	.h2 {
+		margin-bottom: 25px;
+	}
+}
+
+.donate_tmpl {
+  .footer {
+    background-color: #e42d64;
+  }
+  .help-btn {
+    color: #553ade;
+    background: rgba(255, 243, 5, 0.9);
+    span {
+      color: #553ade;
+    }
+    &:before {
+      background-color: #fff307;
+    }
+  }
+}
+
+.donate-bootom {
+  margin-top: 130px;
+  .title {
+    color: #ffffff;
+    font-family: "Noto Sans";
+    font-size: 61px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  .download-btn {
+    float: right;
+  }
+}
+
+.donate-item {
+  margin-bottom: 82px;
+  margin-top: 59px;
+  &.donate-bootom {
+  margin-top: 130px;
+  }
+  .help-item {
+    margin-bottom: 50px;
+  }
+  .content {
+    padding: 0 28px;
+    p {
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 30px;
+      font-family: "Noto Sans";
+    }
+    h5 {
+       color: #ffffff;
+      font-size: 18px;
+      line-height: 30px;
+      font-family: "Noto Sans";
+      font-weight: 700;
+    }
+  }
+  .score {
+    margin-top: 50px;
   }
 }

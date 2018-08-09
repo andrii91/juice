@@ -297,4 +297,52 @@
   .team-title {
     font-size: 45px;
   }
+  .blog-item {
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  .blog-item .content {
+    margin: 39px 16px;
+      max-width: calc(100% - 32px);
+    
+    .title {
+      font-size: 27px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .blog_page-item h1 {
+    font-size: 40px;
+  }
+  .blog_page-item .sub_title {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  .blog_page-item .social {
+    margin-bottom: 30px;
+  }
+  .blog_page-item img {
+    max-width: 100%;
+  }
+  .donate-bootom .download-btn {
+    float: none;
+  }
+  .donate-bootom .title {
+    font-size: 35px;
+    margin-bottom: 20px;
+    br {
+      display: none;
+    }
+}
+}
+&.blog_page #nav-icon span {
+  background: #000;
+}
+&.blog_page_v2 .blog_page-item img {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 }
