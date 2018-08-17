@@ -81,7 +81,20 @@ $(document).ready(function () {
     $from.parent().find('.more').slideToggle(400);
 
 
-  })
+  });
+  
+  
+  $('form').on('submit', function (e) {
+    e.preventDefault();
+    $('.submit').addClass('inactive');
+    $('.submit').prop('disabled', true);
+    var $form = $(this);
+   $form.hide();
+   $form.parent().find('.team-title').text('Thank you');
+   $form.parent().find('.team-sub_title').text('Some copy here');
+    
+
+  });
 
 
 
